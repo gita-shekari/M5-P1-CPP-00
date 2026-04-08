@@ -6,7 +6,7 @@
 /*   By: gshekari <gshekari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 20:21:49 by gshekari          #+#    #+#             */
-/*   Updated: 2026/01/23 21:22:42 by gshekari         ###   ########.fr       */
+/*   Updated: 2026/04/07 16:53:00 by gshekari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,23 @@
 class Contact
 {
 	private :
-		std::string first_name;
-		std::string last_name;
-		std::string phone_number;
+		std :: string firstName;
+		std :: string lastName;
+		std :: string nickName;
+		std :: string phoneNumber;
+		std :: string darkSecret;
 	public :
 		Contact();
-
 		void setFirstName(std::string fn);
 		void setLastName(std::string ln);
+		void setNickName(std::string nn);
 		void setPhoneNumber(std::string pn);
+		void setDarkSecret(std::string ds);
+		std::string getFirstName();
+		std::string getLastName();
+		std::string getNickName();
+		std::string getPhoneNumber();
+		std::string getDarkSecret();
 };
 
 #endif

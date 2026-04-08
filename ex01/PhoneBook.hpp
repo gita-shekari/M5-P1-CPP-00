@@ -6,7 +6,7 @@
 /*   By: gshekari <gshekari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 20:20:54 by gshekari          #+#    #+#             */
-/*   Updated: 2026/03/25 17:24:10 by gshekari         ###   ########.fr       */
+/*   Updated: 2026/04/08 17:34:25 by gshekari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,16 @@
 class PhoneBook
 {
 private:
-	Contact contact[8];
+	Contact contacts[8];
+	int index;
+	int count;
 public:
-	PhoneBook(/* args */);
+	PhoneBook();
 	~PhoneBook();
 	void displayContacts();
+	void displayContact(int i);
 	void addContact(Contact c);
+	std::string applyForamt(std::string field);
 };
 
 #endif
