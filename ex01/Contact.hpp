@@ -6,7 +6,7 @@
 /*   By: gshekari <gshekari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 20:21:49 by gshekari          #+#    #+#             */
-/*   Updated: 2026/04/07 16:53:00 by gshekari         ###   ########.fr       */
+/*   Updated: 2026/04/09 20:20:16 by gshekari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ class Contact
 		std :: string darkSecret;
 	public :
 		Contact();
+		~Contact();
 		void setFirstName(std::string fn);
 		void setLastName(std::string ln);
 		void setNickName(std::string nn);

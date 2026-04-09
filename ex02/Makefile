@@ -9,7 +9,7 @@ $(NAME): $(OBJS)
 	c++ $(OBJS) -o $@
 
 %.o: %.cpp
-	c++ -Wall -Wextra -Werror -o $@ -c $<
+	c++ -Wall -Wextra -Werror  -std=c++98 -o $@ -c $<
 
 clean:
 	@rm -f $(OBJS)

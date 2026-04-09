@@ -6,13 +6,16 @@
 /*   By: gshekari <gshekari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 20:20:54 by gshekari          #+#    #+#             */
-/*   Updated: 2026/04/08 17:34:25 by gshekari         ###   ########.fr       */
+/*   Updated: 2026/04/09 20:17:59 by gshekari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PHONEBOOK
 #define PHONEBOOK
-
+#include <string>
+#include <iostream>
+#include <iomanip>
+#include "Contact.hpp"
 
 class PhoneBook
 {

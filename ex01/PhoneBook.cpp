@@ -6,28 +6,12 @@
 /*   By: gshekari <gshekari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 20:49:44 by gshekari          #+#    #+#             */
-/*   Updated: 2026/04/08 17:40:36 by gshekari         ###   ########.fr       */
+/*   Updated: 2026/04/09 20:21:36 by gshekari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string>
-#include <iostream>
-#include <iomanip>
-#include "Contact.hpp"
+#include "PhoneBook.hpp"
 
-class PhoneBook
-{
-private:
-	Contact contacts[8];
-	int index;
-	int count;
-public:
-	PhoneBook();
-	~PhoneBook();
-	void addContact(Contact c);
-	void displayContacts();
-	void displayContact(int i);
-};
 PhoneBook::PhoneBook() : index(0), count(0)
 {
 }
@@ -35,7 +19,7 @@ PhoneBook::~PhoneBook()
 {
 
 }
-std::string applyForamt(std::string field)
+std::string PhoneBook::applyForamt(std::string field)
 {
 	if (field.length() > 10)
 		return (field.substr(0, 9) + '.');
