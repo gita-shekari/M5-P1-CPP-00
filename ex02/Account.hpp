@@ -6,7 +6,7 @@
 /*   By: gshekari <gshekari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/08 20:00:47 by gshekari          #+#    #+#             */
-/*   Updated: 2026/04/09 20:11:00 by gshekari         ###   ########.fr       */
+/*   Updated: 2026/04/10 19:29:38 by gshekari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ public:
 	void	makeDeposit(int deposit);
 	bool	makeWithdrawal(int withdrawal);
 	void	displayStatus();
-	void	displayAccountsInfos();
-	void	displayTimestamp(void);
+	static	void	displayTimestamp(void);
+	static	void	displayAccountsInfos();
 };
 
 #endif

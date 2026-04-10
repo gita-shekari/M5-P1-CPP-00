@@ -6,7 +6,7 @@
 /*   By: gshekari <gshekari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 20:49:44 by gshekari          #+#    #+#             */
-/*   Updated: 2026/04/09 20:21:36 by gshekari         ###   ########.fr       */
+/*   Updated: 2026/04/10 16:45:29 by gshekari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,6 @@
 
 PhoneBook::PhoneBook() : index(0), count(0)
 {
-}
-PhoneBook::~PhoneBook()
-{
-
 }
 std::string PhoneBook::applyForamt(std::string field)
 {

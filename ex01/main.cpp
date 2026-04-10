@@ -16,15 +16,15 @@ void showMenu()
 int main()
 {
 	PhoneBook phoneBook;
-	int cmd;
+	std::string cmd;
 
 	while(true)
 	{
-		cmd = 0;
+		cmd = "";
 		showMenu();
 		std :: cin >> cmd;
 		Contact contact;
-		if (cmd == 1)
+		if (cmd == "ADD")
 		{
 			std::string firstName;
 			std::cout << "Enter first name:" << "\n";
@@ -52,7 +52,7 @@ int main()
 			contact.setDarkSecret(darkSecret);
 			phoneBook.addContact(contact);
 		}
-		else if (cmd == 2)
+		else if (cmd == "SEARCH")
 		{
 			phoneBook.displayContacts();
 			std::string index;
@@ -64,7 +64,7 @@ int main()
 			else
 				std :: cout << "The number you entered is not valid" << "\n";
 		}
-		else if (cmd == 3)
+		else if (cmd == "EXIT")
 			break ;
 		else
 			std :: cout << "The number you entered is not valid" << "\n";

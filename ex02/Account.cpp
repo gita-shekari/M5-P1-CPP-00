@@ -6,11 +6,12 @@
 /*   By: gshekari <gshekari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/08 19:38:58 by gshekari          #+#    #+#             */
-/*   Updated: 2026/04/09 20:14:00 by gshekari         ###   ########.fr       */
+/*   Updated: 2026/04/10 19:27:55 by gshekari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Account.hpp"
+
 
 int Account::nbAccounts = 0;
 int Account::totalAmount = 0;

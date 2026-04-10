@@ -6,19 +6,11 @@
 /*   By: gshekari <gshekari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 20:23:42 by gshekari          #+#    #+#             */
-/*   Updated: 2026/04/09 20:18:50 by gshekari         ###   ########.fr       */
+/*   Updated: 2026/04/10 16:45:01 by gshekari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contact.hpp"
-
-Contact::Contact()
-{
-}
-
-Contact::~Contact()
-{
-}
 
 void Contact::setFirstName(std::string fn)
 {
